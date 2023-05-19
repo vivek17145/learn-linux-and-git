@@ -1,1 +1,31 @@
+<<<<<<< Updated upstream
 =================================Git Commands================================
+=======
+=============================Git Commands=====================================
+
+git init //initialized our repository
+
+git commit // commiting our code to repository
+
+git stash  // git 
+
+git branch or git branch --list
+
+git branch -a
+
+git branch -r
+
+git branch branch <branch name>
+
+git branch -d <branch name>
+
+git checkout <branch name>
+
+git push origin -delete <branch name>
+
+git branch -m <old branch name> <new branch name>
+
+git merge <branch name>
+
+
+>>>>>>> Stashed changes
