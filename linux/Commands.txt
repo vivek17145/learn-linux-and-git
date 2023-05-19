@@ -1,0 +1,2 @@
+=============================Linux Commands==================================
+sudo apt-get --broken install
