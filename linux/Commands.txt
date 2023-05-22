@@ -1,7 +1,39 @@
 ===============================Linux Commands=================================
 
->>>>>>>>>>>>>>>>>>>>>Create file Commands
 
+-----------------Important Command for both file and dir----------------
+
+>>>> Any file name or dir name start with dot(.fileName) that file is created as hidden
+
+>>>> ls >> see list of file in current dir
+
+>>>> ls -a >> see all file including hidden
+
+>>>> cp file1/dir(source) file2/dir(destination) >> copy the file/dir one place to another 
+
+>>>> mv filename/dirName directoryname >> for cut and pest or move file/dir one place to another
+
+>>>> mv file/dir(oldName) file1/dir(newName) >> for rename a file/directory
+
+>>>> grep findingtext location >> for finding specific text or dir
+
+>>>> sort filename >> sorting the file in alphabetical order
+
+>>>> less filename >> reading file 
+
+>>>> more filename >> reading file 
+
+>>>> head fileName >> reading file 
+
+>>>> tail filename >> reading file 
+
+>>>> clear or (ctrl + L) >> for clear our terminal screen
+
+>>>> tree >> for showing file structure in the form of tree
+
+
+
+>>>>>>>>>>>>>>>>>>>>>Create file Commands
 1. cat > create(>),add(>> new content but not update old content) concatenate, copy, read
 
 ex > 1. cat>filename(creating a file with content)
@@ -34,16 +66,21 @@ ex > 1. nano filename
      2. command for save the file and close editer
 	a. close the editer(ctrl + X) and saving file(shift + Y)
 	b. saving file with new content(ctrl + O) then (ctrl + X) then (shift + Y)
-5. touch .fileName >> create hidden file
+	
+	
+5. rm -rf fileName/dirName >> remove empty/non-empty file and directory
 
-5. ls > see list of file in current dir
+6. rm -rp dirName/fileName >> Removes non-empty directory including parent & subdirectory
+
+7. rm -r dir/fileName >> Remove empty/non-empty or nested directory/file
+
 
 >>>>>>>>>>>>>>>>>>>>>>>>Creating a directory
 1. mkdir dirname >> creating a single directory
 
 2. mkdir dir1/dir2/dir3 >> creating nested directory
 
-3. mkdir dir1 dir2 dir3 >> creating multiple dirctory
+3. mkdir -p dir1 dir2 dir3 >> creating multiple dirctory
 
 4. cd dirName >> change directory in forword direction
 
@@ -55,10 +92,26 @@ ex > 1. nano filename
 
 8. pwd >> print working directory
 
-9. 
+9. rmdir dirName >>remove empty directory
+
+10. rmdir -p dir1Name/dir2name >> Remove both parent and child empty dir
+
+11. rmdir -pv  dirname/dirName >> remove all empty dir parent and child
+
 
 >>>>>>>>>>>>>>>>>>>>>>>>Users Admin Commands
 
-1. sudo su > switch user as super(admin) user
+1. sudo su >> switch user as super(admin) user
 
-2. 
+2. hostname >> system/host name of machine
+
+3. ifconfig >> network config details or ip address details
+
+4. hostname -i >> only ip address of network
+
+5. cat /etc/os-release >> operating system related info
+
+6. whoami >> for finding the user
+
+7
+
