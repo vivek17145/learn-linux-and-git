@@ -1,29 +1,29 @@
 <<<<<<< Updated upstream
 =============================Git Commands=====================================
 
-git init //initialized our repository
+git init >> initialized our repository
 
-git commit // commiting our code to repository
+git commit >> commiting our code to the local system without commit message
 
-git stash  // git 
+git commit -m "commit message" >> commit code with commit message
 
-git branch or git branch --list
+git branch or git branch --list >> show the list of local branch
 
-git branch -a
+git branch -a >> show all the list of branch(remote and local)
 
-git branch -r
+git branch -r >> show all the list of remote branch
 
-git branch branch <branch name>
+git branch <branch name> >> creating a new branch
 
-git branch -d <branch name>
+git branch -d <branch name> >> delete the specific branch
 
-git checkout <branch name>
+git checkout <branch name> >> switch to specific branch
 
 git push origin -delete <branch name>
 
-git branch -m <old branch name> <new branch name>
+git branch -m <old branch name> <new branch name> >> rename the branch name
 
-git merge <branch name>
+git merge <branch name> >> merge one branch to another
 
 
 >>>>>>> Stashed changes
