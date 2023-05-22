@@ -1,6 +1,4 @@
 <<<<<<< Updated upstream
-=================================Git Commands================================
-=======
 =============================Git Commands=====================================
 
 git init //initialized our repository
@@ -29,3 +27,13 @@ git merge <branch name>
 
 
 >>>>>>> Stashed changes
+
+git stash
+
+git stash list
+
+git stash pop
+
+git stash save "stash name"
+
+

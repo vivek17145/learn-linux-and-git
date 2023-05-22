@@ -1,1 +1,64 @@
 ===============================Linux Commands=================================
+
+>>>>>>>>>>>>>>>>>>>>>Create file Commands
+
+1. cat > create(>),add(>> new content but not update old content) concatenate, copy, read
+
+ex > 1. cat>filename(creating a file with content)
+	2. cat >> filename (adding text on existing file)
+	3. cat file1 file2 > newfilename (creating new file with file1 and file2 data)
+	4. cat filename(showing file data for reading)
+	5. cat file1>file2(copy file1 data to file 2)
+	6.tac filename(reverse content in that file)
+
+2. touch > create empty(single or multiple) file or change timestamp
+
+ex > 1.touch filename1 filename2 filename3(for createing(single or multiple file) or updating(single or multiple file) timestamp)
+	2.stat filename check timestamp of file
+	3.touch -a filename (update access timestamp)
+	4.touch -m filename (update modified timestamp)
+
+3. vi/vim > Editer(create,write,update)
+
+ex > 1. vi filename(creating file with writing(i) content or updating existing file)
+     2. command for saving file or close editer
+	a. (:w) => file save
+	b. (:wq) => file save and close editer
+	c. (:q) => close the editer
+	d. (:q!) => close the editer force fully
+
+4. nano > Editer(create,write,update)
+
+ex > 1. nano filename
+
+     2. command for save the file and close editer
+	a. close the editer(ctrl + X) and saving file(shift + Y)
+	b. saving file with new content(ctrl + O) then (ctrl + X) then (shift + Y)
+5. touch .fileName >> create hidden file
+
+5. ls > see list of file in current dir
+
+>>>>>>>>>>>>>>>>>>>>>>>>Creating a directory
+1. mkdir dirname >> creating a single directory
+
+2. mkdir dir1/dir2/dir3 >> creating nested directory
+
+3. mkdir dir1 dir2 dir3 >> creating multiple dirctory
+
+4. cd dirName >> change directory in forword direction
+
+5. cd .. >> change dirrectory in previous direction
+
+6. cd ../../../ >> change nested multiple dirctory in previous direction
+
+7. cd dir1/dir2/dir3 >> change nested multiple dirctory in forward direction
+
+8. pwd >> print working directory
+
+9. 
+
+>>>>>>>>>>>>>>>>>>>>>>>>Users Admin Commands
+
+1. sudo su > switch user as super(admin) user
+
+2. 
