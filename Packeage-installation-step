@@ -1,0 +1,46 @@
+>>>>>>>>>>>>>>>>>>>>>> Mongodb Installation process <<<<<<<<<<<<<<<<<<<<<<<<<<
+
+Step 1. First we remove any file exist with name mongo
+
+>>> sudo rm /etc/apt/sources.list.d/mongodb*.list
+
+Step 2. After that First step we are adding key(without key repository will not load)
+
+>>> sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv EA312927
+
+Step 3. Now, create a new MongoDB repository list file:
+
+>>> echo "deb http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.2 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.2.list
+
+Step 4. After adding the repository details, we need to update the packages list:
+
+>>> sudo apt-get update
+
+Step 5. Now install MongoDB:
+
+>>> sudo apt install mongodb-org
+
+
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>> MYSQL Installation <<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+Step 1. After updating or upgrading packages install my sql server 
+
+>>> sudo apt install mysql-server
+
+Step 2. After installing my sql server we need mysql client so install it
+
+>>>> sudo apt install mysql-client
+
+Step 3. After install my sql server and my sql client check version
+
+>>>> mysql --version
+
+Step 4. If you are change the security script follow the instruction and command
+
+>>>> sudo mysql_secure_installation
+
+Step 5. 

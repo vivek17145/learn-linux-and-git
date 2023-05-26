@@ -99,6 +99,18 @@ ex > 1. nano filename
 11. rmdir -pv  dirname/dirName >> remove all empty dir parent and child
 
 
+>>>>>>>>>>>>>>>>>>>>>>> Commonly Used Command
+
+1. sudo apt update >> Update the already exist packages
+
+2. sudo apt upgrade >> Upgrade the installed Packages
+
+3. sudo apt --fix-missing update >> update required missing package 
+
+4. sudo apt install -f >> force fully install broken packages
+
+
+
 >>>>>>>>>>>>>>>>>>>>>>>>Users Admin Commands
 
 1. sudo su >> switch user as super(admin) user
@@ -113,5 +125,5 @@ ex > 1. nano filename
 
 6. whoami >> for finding the user
 
-7
+7. sudo apt --fix-install
 

@@ -25,7 +25,7 @@ git branch -m <old branch name> <new branch name> >> rename the branch name
 
 git merge <branch name> >> merge one branch to another
 
-
+ git push --set-upstream origin branch-name
 >>>>>>> Stashed changes
 
 git stash
