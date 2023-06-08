@@ -4,4 +4,24 @@ Configuation Management Tool
 3. Puppet
 4. Salt
 
->>>> Automation T
+>>>> Automation Tool using Ansible
+
+ Ansible commands
+ 
+## ansible ip/group/group of group -m ping >> for checking connection
+
+## ansible ip/group -m file -a "path=path of file state=touch mode=permission" >> creating file with ad-hoc commands and giving permission
+
+## ansible ip/group -m file -a "path=path of file state=absent" >> deleting file with ad-hoc commands and giving permission
+
+## ansible ip/group -m file -a "path=path of file state=directory mode=permission" >> creating directory with ad-hoc commands and giving permission
+
+## ansible ip/group -m file -a "path=path of file state=link mode=permission" >> creating soft-link with ad-hoc commands and giving permission
+
+## ansible ip/group -m yum/apt -a "name=name of package state=present/latest/absent" -b >> installing package with ad-hoc commands with root previleges
+
+## ansible ip/group -m file -a "path=path of file state=touch mode=permission" >> creating file with ad-hoc commands and giving permission
+
+## ansible -i inventory-file-loc ip/group -m shell -a "argument as uptime" >> getting uptime for connected node with executing on shell
+
+## ansible -i inventory-file-loc ip/group -m command(default) -a "argument as uptime" >> getting uptime for connected node with executing as command(by default)

@@ -1,17 +1,48 @@
-<<<<<<< Updated upstream
 =============================Git Commands=====================================
 
 git init >> initialized our repository
+
+git --version  >> for checking version of git file
+
+git config --global user.name 'name of user' >> for setting user name
+
+git config --global user.email 'email of user' >> for setting user email
+
+ls >> geting all the file from current directory
+
+git status >> check the git status and see if it is a part of our repo
+
+git status --short >> check the short status(??-untracked,A-add file,M-modified file,D-deleted file) of file
+
+git add filename >> add the file to git repo with extension
+
+git add --all or git add -A >> add all the file to git repo
+
+git mv filename foldername >> move file from source to destination
+
+git restore --staged foldername filename >> restore file from destination to source 
 
 git commit >> commiting our code to the local system without commit message
 
 git commit -m "commit message" >> commit code with commit message
 
-git branch or git branch --list >> show the list of local branch
+git commit add -m "commit message" >> commiting with added changes file to repo with commit message
 
-git branch -a >> show all the list of branch(remote and local)
+git commit -a -m "commit message" >> commit the modified file directly without add to staging(not recommanded)
 
-git branch -r >> show all the list of remote branch
+git log >> to view the history pf commits for repo
+
+git branch >> to view all the branches with current branches(*)
+
+git branch branchName >> adding a new branch to repo
+
+git checkout -b branchname >> create branch and directly switch to that branch
+
+git checkout branchName >> move to current branch to new branch
+
+
+
+=============================== Branch related Commands ======================================
 
 git branch <branch name> >> creating a new branch
 
@@ -19,14 +50,26 @@ git branch -d <branch name> >> delete the specific branch
 
 git checkout <branch name> >> switch to specific branch
 
-git push origin -delete <branch name>
+git branch or git branch --list >> show the list of local branch
+
+git branch -a >> show all the list of branch(remote and local)
+
+git branch -r >> show all the list of remote branch
+
+git branch -vv  >> to view local branch, commit id and commit messages
+
+git branch -vva  >> to view all branches with commit id and commit messages
+
+git push origin -delete <branch name> >> deleting branch from remote
 
 git branch -m <old branch name> <new branch name> >> rename the branch name
 
 git merge <branch name> >> merge one branch to another
 
- git push --set-upstream origin branch-name
->>>>>>> Stashed changes
+git push --set-upstream origin branch-name >> add branch to remote
+
+
+=============================== Stashed related Commands ======================================
 
 git stash
 
@@ -35,5 +78,9 @@ git stash list
 git stash pop
 
 git stash save "stash name"
+
+
+
+
 
 

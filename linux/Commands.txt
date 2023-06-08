@@ -1,129 +1,216 @@
 ===============================Linux Commands=================================
 
 
------------------Important Command for both file and dir----------------
+====================== Important Command for both file and dir =======================
 
->>>> Any file name or dir name start with dot(.fileName) that file is created as hidden
+## Any file name or dir name start with dot(.fileName) that file is created as hidden
 
->>>> ls >> see list of file in current dir
+## ls => see list of file in current dir
 
->>>> ls -a >> see all file including hidden
+## ls -a => see all file including hidden
 
->>>> cp file1/dir(source) file2/dir(destination) >> copy the file/dir one place to another 
+## cp file1/dir(source) file2/dir(destination) => copy the file/dir one place to another 
 
->>>> mv filename/dirName directoryname >> for cut and pest or move file/dir one place to another
+## mv filename/dirName directoryname => for cut and pest or move file/dir one place to another
 
->>>> mv file/dir(oldName) file1/dir(newName) >> for rename a file/directory
+## mv file/dir(oldName) file1/dir(newName) => for rename a file/directory
 
->>>> grep findingtext location >> for finding specific text or dir
+## grep findingtext location => for finding specific text or dir
 
->>>> sort filename >> sorting the file in alphabetical order
+## sort filename => sorting the file in alphabetical order
 
->>>> less filename >> reading file 
+## less filename => reading file 
 
->>>> more filename >> reading file 
+## more filename => reading file 
 
->>>> head fileName >> reading file 
+## head fileName => reading file 
 
->>>> tail filename >> reading file 
+## tail filename => reading file 
 
->>>> clear or (ctrl + L) >> for clear our terminal screen
+## clear or (ctrl + L) => for clear our terminal screen
 
->>>> tree >> for showing file structure in the form of tree
+## tree dir-name => for showing file structure in the form of tree
+
+------------------------- Permission for file and dir -----------------------------------
+
+## permission value 4-read, 2-write, 1-execute  default-value-file 1, default-value-dir 2
+
+## ls -l => see all the permission for file/dir
+
+## chmod permission-value file-name => giving specific permission for file/dir by Method1
+
+## chmod u=r,g=rwx,o=rw file-name => giving permission for file/dir by Method2
+
+## chmod permission-value file-name1 file-name2 => giving specific permission for multiple file/dir
+
+## chmod u+r,g-w,o+x file-name => giving specific permission for file/dir by Method3
+
+## chown group-name file/dir-name => changing owner of this file/dir
+
+## chgrp group-name file/dir-name => changing group of this file/dir
 
 
+------------------------ Creating soft and hard link --------------------------------------
 
->>>>>>>>>>>>>>>>>>>>>Create file Commands
-1. cat > create(>),add(>> new content but not update old content) concatenate, copy, read
+## ln -s file-name soft-link-name => creating soft link for existing file
 
-ex > 1. cat>filename(creating a file with content)
-	2. cat >> filename (adding text on existing file)
-	3. cat file1 file2 > newfilename (creating new file with file1 and file2 data)
-	4. cat filename(showing file data for reading)
-	5. cat file1>file2(copy file1 data to file 2)
-	6.tac filename(reverse content in that file)
+## ln file-name hard-link-name => creating hard link
 
-2. touch > create empty(single or multiple) file or change timestamp
+------------------------ Creating extracting zip file --------------------------------------
+## tar -cvf name-of-tar-file.tar file-name1 file-name2 => creating tar file with multiple file
 
-ex > 1.touch filename1 filename2 filename3(for createing(single or multiple file) or updating(single or multiple file) timestamp)
-	2.stat filename check timestamp of file
-	3.touch -a filename (update access timestamp)
-	4.touch -m filename (update modified timestamp)
+## gzip name-of-tarfile => compressing the tar file
 
-3. vi/vim > Editer(create,write,update)
+## gunzip name-of-tarfile => uncompressing the tar file
 
-ex > 1. vi filename(creating file with writing(i) content or updating existing file)
-     2. command for saving file or close editer
+## tar -xvf name-of-tarfile => extract all files from the tar file
+
+============================ Create file Commands =========================================
+
+## cat ## create(>),add(>> new content but not update old content) concatenate, copy, read
+
+ex => cat>filename(creating a file with content)
+	## cat >> filename (adding text on existing file)(ctrl+D)for exit
+	## cat file1 file2 >> newfilename (creating new file with file1 and file2 data)
+	## cat filename(showing file data for reading)
+	## cat file1 >> file2(copy file1 data to file 2)
+	## tac filename(reverse content in that file)
+
+## touch => create empty(single or multiple) file or change timestamp
+
+ex. touch filename1 filename2 filename3 => (for creating(single or multiple file) or updating(single or multiple file) timestamp)
+    stat filename => check timestamp of file
+    touch -a filename => (update access timestamp)
+    touch -m filename => (update modified timestamp)
+
+## vi/vim commands working as Editer(create,write,update)
+
+ex. vi filename(creating file with writing(i) content or updating existing file)
+     => command for saving file or close editer
 	a. (:w) => file save
 	b. (:wq) => file save and close editer
 	c. (:q) => close the editer
 	d. (:q!) => close the editer force fully
 
-4. nano > Editer(create,write,update)
+## nano commands working as Editer(create,write,update)
 
-ex > 1. nano filename
+ex. nano filename => creating file with that name and open an editer
 
-     2. command for save the file and close editer
-	a. close the editer(ctrl + X) and saving file(shift + Y)
+## command for save the file and close editer
+ 	a. close the editer(ctrl + X) and saving file(shift + Y)
 	b. saving file with new content(ctrl + O) then (ctrl + X) then (shift + Y)
 	
 	
-5. rm -rf fileName/dirName >> remove empty/non-empty file and directory
+## rm -rf fileName/dirName => remove empty/non-empty single file and directory
 
-6. rm -rp dirName/fileName >> Removes non-empty directory including parent & subdirectory
+## rm -rp dirName/fileName => Removes non-empty directory including parent & subdirectory
 
-7. rm -r dir/fileName >> Remove empty/non-empty or nested directory/file
+## rm -r dir/fileName => Remove empty/non-empty or nested directory/file
 
+## rm -rf file1 file2 file3 => remove multiple file/directory from directory
 
->>>>>>>>>>>>>>>>>>>>>>>>Creating a directory
-1. mkdir dirname >> creating a single directory
+## rm -rf * => remove all the file from current directory
 
-2. mkdir dir1/dir2/dir3 >> creating nested directory
+====================== Creating a directory ================================
 
-3. mkdir -p dir1 dir2 dir3 >> creating multiple dirctory
+## mkdir <path> [mode] [user] [group]
 
-4. cd dirName >> change directory in forword direction
+## mkdir dirname => creating a single directory
 
-5. cd .. >> change dirrectory in previous direction
+## mkdir dir1 dir2 dir3 => creating multiple directory
 
-6. cd ../../../ >> change nested multiple dirctory in previous direction
+## mkdir dir1/dir2/dir3 => creating nested directory
 
-7. cd dir1/dir2/dir3 >> change nested multiple dirctory in forward direction
+## mkdir -p dir1/dir2/dir3 => creating nested dirctory if current directory doesn't exist
 
-8. pwd >> print working directory
+## cd dirName => change directory in forword direction
 
-9. rmdir dirName >>remove empty directory
+## cd .. => change dirrectory in previous direction
 
-10. rmdir -p dir1Name/dir2name >> Remove both parent and child empty dir
+## cd ../../../ => change nested multiple dirctory in previous direction
 
-11. rmdir -pv  dirname/dirName >> remove all empty dir parent and child
+## cd dir1/dir2/dir3 => change nested multiple dirctory in forward direction
 
+## pwd => print working directory
 
->>>>>>>>>>>>>>>>>>>>>>> Commonly Used Command
+## rmdir dirName => remove empty single directory
 
-1. sudo apt update >> Update the already exist packages
+## rmdir dir1 dir2 dir3 => remove multiple directory
 
-2. sudo apt upgrade >> Upgrade the installed Packages
+## rmdir -p dir1Name/dir2name => Remove both parent and child empty dir
 
-3. sudo apt --fix-missing update >> update required missing package 
-
-4. sudo apt install -f >> force fully install broken packages
-
+## rmdir -pv  dirname/dirName => remove all empty dir parent and child
 
 
->>>>>>>>>>>>>>>>>>>>>>>>Users Admin Commands
+====================== Commonly Used Command ===============================
 
-1. sudo su >> switch user as super(admin) user
+## sudo apt update or sudo apt-get update => Update the already exist packages
 
-2. hostname >> system/host name of machine
+## sudo apt upgrade or sudo apt-get upgrade => Upgrade the installed Packages
 
-3. ifconfig >> network config details or ip address details
+## sudo apt --fix-missing update => update required missing package 
 
-4. hostname -i >> only ip address of network
+## sudo apt install -f => force fully install broken packages
 
-5. cat /etc/os-release >> operating system related info
+## sudo apt --fix-install => fix dependency installation related issue
 
-6. whoami >> for finding the user
+## sudo apt --fix-broken install => install and fix broken package
 
-7. sudo apt --fix-install
+## sudo dpkg --configure -a => reconfigure pending package that need configuration
 
+## sudo dpkg -l | grep ^..r => get all package required for dpkg
+
+## sudo dpkg --remove --force-remove-reinstreq => delete all broken packages
+
+## sudo apt clean => clean the package from cache and install script
+
+## sudo apt install net-tools => install network related packages
+
+## sudo apt-get install software-properties-common => getting install common required packages
+
+## sudo apt-add-repository ppa:package-name/file-name => adding any repository to our apt package manager
+
+======================= Users or Admin Commands ===============================
+
+## sudo su => switch user as super(admin) user
+
+## hostname => system/host name of machine
+
+## ifconfig => network config details or ip address details
+
+## hostname -i => only ip address of network
+
+## cat /etc/os-release => read file for operating system related info
+
+## lsb_release -a => getting os release related info
+
+## whoami => for finding the user
+
+## useradd name-of-user => create a new user in linux system and sh folder
+
+## adduser name-of-user => create a new user in linux system and bash folder
+
+## passwd name-of-user => create a password for that user
+
+## cat /etc/passwd => Getting all users list
+
+## cat /etc/group => Getting list of all group
+
+## groupadd group-name/addgroup group-name => adding/creating new group
+
+## gpasswd -a user-name group-name => adding single user in group
+
+## gpasswd -M user-name,username group-name => adding multiple user in a group
+
+## gpasswd -d user-name group-name => deleting single user in group
+
+## groupdel group-name =>  Deleting a group from the list
+
+## userdel user-name => Deleting user from the list without group
+
+## 
+
+
+========================= Download file commands ================================
+
+wget file url => Downloading any file with url
