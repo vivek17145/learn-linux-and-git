@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ===============================Linux Commands=================================
 
 
@@ -214,3 +215,7 @@ ex. nano filename => creating file with that name and open an editer
 ========================= Download file commands ================================
 
 wget file url => Downloading any file with url
+=======
+=============================Linux Commands==================================
+sudo apt-get --broken install
+>>>>>>> 9634c611e140ef275b9429f7ac38c97eadbb70c6

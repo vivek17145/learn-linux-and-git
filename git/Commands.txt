@@ -1,5 +1,6 @@
 =============================Git Commands=====================================
 
+<<<<<<< HEAD
 git init >> initialized our repository
 
 git --version  >> for checking version of git file
@@ -84,3 +85,8 @@ git stash save "stash name"
 
 
 
+=======
+git init //initialized our repository
+
+git commit // commiting our code to repository
+>>>>>>> 9634c611e140ef275b9429f7ac38c97eadbb70c6
