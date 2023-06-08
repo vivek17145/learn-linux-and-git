@@ -1,12 +1,10 @@
-Configuation Management Tool
+============================== Configuation Management Tool =======================================================
 1. Ansible
 2. Chef
 3. Puppet
 4. Salt
 
->>>> Automation Tool using Ansible
-
- Ansible commands
+========================== Automation Tool Ansible Commands ===================================
  
 ## ansible ip/group/group of group -m ping >> for checking connection
 

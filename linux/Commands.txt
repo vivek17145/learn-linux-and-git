@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ===============================Linux Commands=================================
 
 
@@ -58,6 +57,7 @@
 ## ln file-name hard-link-name => creating hard link
 
 ------------------------ Creating extracting zip file --------------------------------------
+
 ## tar -cvf name-of-tar-file.tar file-name1 file-name2 => creating tar file with multiple file
 
 ## gzip name-of-tarfile => compressing the tar file
@@ -214,8 +214,8 @@ ex. nano filename => creating file with that name and open an editer
 
 ========================= Download file commands ================================
 
-wget file url => Downloading any file with url
-=======
+## wget file-url => Downloading any file from url
+
 =============================Linux Commands==================================
-sudo apt-get --broken install
->>>>>>> 9634c611e140ef275b9429f7ac38c97eadbb70c6
+## sudo apt-get --broken install
+
